@@ -1,0 +1,30 @@
+{
+    "name": "marianoasselborn/politicusio",
+    "description": "Politicus IO application. Rate your representatives, create collective memory. Take Democracy back.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mariano Asselborn",
+            "email": "marianoasselborn@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.6.*"
+    },
+    "require": {
+        "slim/slim": "*",
+        "slim/extras": "*",
+        "slim/middleware": "*",
+        "monolog/monolog": "*",
+        "j4mie/paris": "*",
+        "flynsarmy/slim-monolog": "*"
+    },
+    "archive": {
+        "exclude": ["vendor", ".DS_Store", "*.log"]
+    },
+    "autoload": {
+        "psr-0": {
+            "Politicusio\\": "lib/"
+        }
+    }
+}
